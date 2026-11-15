@@ -1,0 +1,11 @@
+{
+  "name": "Drift",
+  "short_name": "Drift",
+  "description": "An infinite, touch-reactive feed with an on-device algorithm that learns you.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#05050a",
+  "theme_color": "#05050a",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

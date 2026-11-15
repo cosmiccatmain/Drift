@@ -1,0 +1,12 @@
+{
+  "name": "drift",
+  "version": "1.0.0",
+  "description": "Drift - an infinite, touch-reactive scrolling feed with an on-device recommendation engine.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 5173",
+    "test": "node test/sim.mjs"
+  },
+  "license": "MIT"
+}

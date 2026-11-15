@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <title>Drift — scroll that scrolls back</title>
+  <meta name="description" content="Drift is an infinite feed of touch-reactive, oddly satisfying clips, ranked by an on-device algorithm that learns your taste in about 20 swipes." />
+  <meta name="theme-color" content="#05050a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta property="og:title" content="Drift" />
+  <meta property="og:description" content="An infinite, touch-reactive feed with an algorithm that learns you. Runs entirely on your device." />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <div id="ambient"><i></i><i></i></div>
+  <main id="app">
+    <div id="feed" tabindex="-1" aria-label="Drift feed"></div>
+
+    <header id="top">
+      <div class="logo"><span class="dot"></span>drift</div>
+      <div id="combo" class="pill" hidden></div>
+      <div class="top-right">
+        <div id="streak" class="pill" title="Daily streak"></div>
+        <button id="snd" class="icon-btn" aria-label="Toggle sound"></button>
+      </div>
+    </header>
+
+    <div id="hint"><div class="chev"></div><b>Swipe up</b><span>Everything you touch reacts</span></div>
+    <div id="toast" role="status"></div>
+  </main>
+
+  <aside id="sheet" aria-hidden="true">
+    <div class="backdrop"></div>
+    <div class="panel" role="dialog" aria-label="Your Drift">
+      <div class="grab"></div>
+      <div id="sheet-body"></div>
+    </div>
+  </aside>
+
+  <div id="desk-hint">
+    <b>↑ ↓</b> or scroll &nbsp;·&nbsp; <b>double-click</b> like &nbsp;·&nbsp; <b>M</b> mute &nbsp;·&nbsp; <b>I</b> insights
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
